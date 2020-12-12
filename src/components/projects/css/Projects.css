@@ -1,0 +1,34 @@
+.card {
+    background-color: #eee;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.projects_name {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.projects_desc {
+    font-size: 0.9em;
+}
+
+.project_img {
+    width: 250px;
+    height: 250px;
+}
+
+.dropdown i, .titledrop {
+    display: inline-block;
+    vertical-align: middle;
+}
+.dropdown i {
+    margin: 5px;
+    font-size: 42px;
+}
+.link-project {
+    text-decoration: none;
+    color: #777777;
+}

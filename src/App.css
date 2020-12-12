@@ -1,38 +1,276 @@
-.App {
+
+
+.center {
+  margin: auto;
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex {
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.inline-block {
+  display: inline-block;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.content {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 1.8em;
+  padding: 10px 0;
+}
+
+
+
+.padding-64 {
+  padding: 64px 0;
+}
+.padding-40 {
+  padding: 40px 0;
+}
+.padding-20 {
+  padding: 20px 0;
+}
+
+.top {
+  top: 0;
+}
+.bottom {
+  bottom: 0;
+}
+.top, .bottom {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.right {
+  float: right!important;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-4 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.display-container {
+  position: relative;
+}
+.display-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.subtitle {
+  font-size: 1.6rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.black {
+  color: #fff;
+  background-color: #000;
+}
+
+.xlarge {
+  font-size: 24px;
+}
+.padding-large {
+  padding: 12px 24px!important;
+}
+
+.wide {
+  letter-spacing: 3px;
+}
+
+.hide {
+  display: none!important;
+}
+
+.show {
+  display: block!important;
+}
+
+.opacity-min {
+  opacity: 0.65;
+}
+.opacity-max {
+  opacity: 0.25;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.wspace {
+  white-space: nowrap;
+}
+
+
+.animate-opacity {
+  animation: opac 0.8s;
+}
+
+
+.row:after,.row:before {
+  content:"";
+  display:table;
+  clear:both
+}
+
+.col,.half,.third,.twothird,.threequarter,.quarter {
+  float:left;
+  width:100%
+}
+.col.s1 {
+  width:8.33333%
+}
+.col.s2 {
+  width:16.66666%
+}
+.col.s3 {
+  width:24.99999%
+}
+.col.s4 {
+  width:33.33333%
+}
+.col.s5 {
+  width:41.66666%
+}
+.col.s6 {
+  width:49.99999%
+}
+.col.s7 {
+  width:58.33333%
+}
+.col.s8 {
+  width:66.66666%
+}
+.col.s9 {
+  width:74.99999%
+}
+.col.s10 {
+  width:83.33333%
+}
+.col.s11 {
+  width:91.66666%
+}
+.col.s12 {
+  width:99.99999%
+}
+@media (min-width:601px){
+  .col.m1 {
+      width:8.33333%
+  }
+  .col.m2 {
+      width:16.66666%
+  }
+  .col.m3,.quarter {
+      width:24.99999%
+  }
+  .col.m4,.third {
+      width:33.33333%
+  }
+  .col.m5 {
+      width:41.66666%
+  }
+  .col.m6,.half {
+      width:49.99999%
+  }
+  .col.m7 {
+      width:58.33333%
+  }
+  .col.m8,.twothird {
+      width:66.66666%
+  }
+  .col.m9,.threequarter {
+      width:74.99999%
+  }
+  .col.m10 {
+      width:83.33333%
+  }
+  .col.m11 {
+      width:91.66666%
+  }
+  .col.m12 {
+      width:99.99999%
   }
 }
+@media (min-width:993px){.col.l1{width:8.33333%}.col.l2{width:16.66666%}.col.l3{width:24.99999%}.col.l4{width:33.33333%}
+  .col.l5{width:41.66666%}.col.l6{width:49.99999%}.col.l7{width:58.33333%}.col.l8{width:66.66666%}
+  .col.l9{width:74.99999%}.col.l10{width:83.33333%}.col.l11{width:91.66666%}.²col.l12{width:99.99999%}}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes opac {
   from {
-    transform: rotate(0deg);
+      opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+      opacity: 1;
+  }
+}
+
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-4 {
+      background-attachment: scroll;
+      min-height: 400px;
+  }
+
+  .bgimg-3 {
+      background-attachment: scroll;
+      min-height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hide-small {
+      display: none!important;
+  }
+
+
+
+}
+@media (max-width: 925px) {
+  .hide-perso {
+      display: none!important;
+  }
+}
+@media (max-width:992px) and (min-width:601px){
+  .hide-medium {
+      display: none!important;
+  }
+}
+
+@media (min-width:993px) {
+  .hide-large {
+      display: none!important;
   }
 }

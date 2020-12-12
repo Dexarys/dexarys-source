@@ -1,0 +1,116 @@
+.alert {
+    padding: 10px 0;
+    background-color: rgb(255, 245, 204);
+    font-size: 1.2em;
+    color: rgb(102, 82, 0);
+}
+
+.bar {
+    width: 100%;
+    overflow: hidden;
+}
+.bar-block .bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+    background-color: #c1bcb3;
+    border-top: 1px solid #b1ada5;
+}
+.bar-block .bar-item:hover {
+    background-color: #cbbea8;
+}
+.bar .button {
+    white-space: normal;
+}
+.bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+    text-decoration: none;
+    color: #555;
+}
+.bar .bar-item:hover {
+    color: #000;
+    background-color: #cbbea8;
+}
+.bar-item i, .bar-item span {
+    vertical-align: middle;
+}
+
+.bgimg-1 {
+    background-image: url('../../../assets/wallhaven-653268-2.jpg');
+    min-height: 100vh;
+}
+
+.citation {
+    color: #000;
+    font-size: 1.6em;
+}
+.description {
+    width: 40%;
+}
+
+.author {
+    font-size: 0.8em;
+    font-style: italic;
+    float: left;
+    color: #666;
+    font-weight: bold;
+}
+
+.social {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.social .social-logo img {
+    width: 70px;
+    ²: 70px;
+    background-color: #cbc5bb;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+.social .social-logo img:hover {
+    background-color: #cbbea8;
+}
+
+@media (max-width: 600px) {
+    .bar {
+        background-color: #cbc5bb;
+    }
+    .alert {
+        position: absolute;
+        top: 50px;
+        width: 100%;
+    }
+    .site-title {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .toggle {
+        background-color: transparent;
+        height: 47px;
+    }
+}
+
+@media (max-width:992px) and (min-width:601px){
+    .animate-menu-top {
+        animation: opac 1s;
+    }
+}
+
+@media (min-width:993px) {
+    .animate-menu-top {
+        animation: opac 1s;
+    }
+}
