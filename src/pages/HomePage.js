@@ -11,10 +11,6 @@ import Projects from '../components/projects/Projects';
 
 class HomePage extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div>
@@ -30,7 +26,7 @@ class HomePage extends Component {
                     </div>
                     <div className="link-buttons flex justify-content-center">
                         <a href="#contact" className="link text-center" rel="noopener noreferrer"><div className="button">Contact Me</div></a>
-                        <a href="#" target="_blank" className="link text-center" rel="noopener noreferrer"><div className="button">Download CV</div></a>
+                        <a href={require('../assets/cv.jpg')} target="_blank" className="link text-center" rel="noopener noreferrer"><div className="button">Download CV</div></a>
                     </div>
                 </div>
 

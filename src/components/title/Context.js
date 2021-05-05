@@ -13,5 +13,3 @@ export function withTitle(Component, title) {
         }
     }
 }
-
-export default { withTitle };

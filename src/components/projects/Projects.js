@@ -35,10 +35,10 @@ class Projects extends Component {
                 <div className="flex justify-content-evenly wrap">
                     {
                         this.state.projects.map((item, i) => (
-                            <a key={i} href={item.link} target="_blank" className="link-project">
+                            <a key={i} href={item.link} target="_blank" rel="noreferrer" className="link-project">
                                 <div key={i} className="card">
-                                    <div>
-                                        <img className="projects_img" src={require('../../assets/content/'+item.source)} alt={item.desc_img} />
+                                    <div className="projects_img_div">
+                                        <img className="projects_img" src={`/img/${item.source}`} alt={item.desc_img} />
                                     </div>
                                     <p className="projects_name">{item.name}</p>
                                     <p className="projects_desc">{item.description}</p>

@@ -15,9 +15,14 @@
     font-size: 0.9em;
 }
 
-.project_img {
-    width: 250px;
-    height: 250px;
+.projects_img_div {
+    width: 230px;
+    height: 230px;
+}
+
+.projects_img {
+    width: 200px;
+    margin: auto;
 }
 
 .dropdown i, .titledrop {
