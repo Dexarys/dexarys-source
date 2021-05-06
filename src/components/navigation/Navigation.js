@@ -104,9 +104,9 @@ class Navigation extends Component {
                         <span className="author hide-small">{this.props.msgAuthor}</span>
                     </div>
                     <div className="social flex hide-small">
-                        <a href="https://github.com/Remanx" target="_blank" rel="noopener noreferrer"><div className="social-logo"><span><img src={github} alt="github" /></span></div></a>
+                        <a href="https://github.com/Dexarys" target="_blank" rel="noopener noreferrer"><div className="social-logo"><span><img src={github} alt="github" /></span></div></a>
                         <a href="https://www.linkedin.com/in/matthieu-fallourd/" target="_blank" rel="noopener noreferrer"><div className="social-logo"><span><img src={linkedin} alt="linkedin" /></span></div></a>
-                        <a href="https://twitter.com/RemanxTM" target="_blank" rel="noopener noreferrer"><div className="social-logo"><span><img src={twitter} alt="twitter" /></span></div></a>
+                        <a href="https://twitter.com/Dexarys" target="_blank" rel="noopener noreferrer"><div className="social-logo"><span><img src={twitter} alt="twitter" /></span></div></a>
                     </div>
                 </div>
             </header>
