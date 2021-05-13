@@ -24,7 +24,6 @@ class App extends Component {
 	};
 
 	componentDidMount() {
-		console.log(firebase);
 		this.firebaseRefOpen = firebase.database().ref('/website_open');
 		this.firebaseRefOpen.on('value', (snap) => {
 			this.setState({ isWebsiteOpen: snap.val(), isLoading: false });

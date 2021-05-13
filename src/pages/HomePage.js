@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { withTitle } from '../components/title/Context';
 
-import mf from '../assets/mf.jpg';
+import mf from '../assets/content/mf.jpg';
+import cv from '../assets/cv.pdf';
 import './css/About.css';
 import './css/PortFolio.css';
 
@@ -25,8 +26,8 @@ class HomePage extends Component {
                         </p>
                     </div>
                     <div className="link-buttons flex justify-content-center">
-                        <a href="#contact" className="link text-center" rel="noopener noreferrer"><div className="button">Contact Me</div></a>
-                        <a href={require('../assets/cv.jpg')} target="_blank" className="link text-center" rel="noopener noreferrer"><div className="button">Download CV</div></a>
+                        {/* <a href="#contact" className="link text-center" rel="noopener noreferrer"><div className="button">Contact Me</div></a> */}
+                        <a href={cv} download="cv.pdf" target="_blank" className="link text-center" rel="noopener noreferrer"><div className="button">Download CV</div></a>
                     </div>
                 </div>
 

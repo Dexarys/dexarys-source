@@ -15,7 +15,7 @@ class Projects extends Component {
         this.dropdown = this.dropdown.bind(this);
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this.projectsRef = firebase.database().ref('/projects');
         this.projectsRef.orderByChild("order").limitToLast(9).on('value', (snap) => {
             let data = [];
@@ -38,7 +38,7 @@ class Projects extends Component {
                             <a key={i} href={item.link} target="_blank" rel="noreferrer" className="link-project">
                                 <div key={i} className="card">
                                     <div className="projects_img_div">
-                                        <img className="projects_img" src={`/img/${item.source}`} alt={item.desc_img} />
+                                        <img className="projects_img" src={`${process.env.PUBLIC_URL}/img/${item.source}`} alt={item.desc_img} />
                                     </div>
                                     <p className="projects_name">{item.name}</p>
                                     <p className="projects_desc">{item.description}</p>

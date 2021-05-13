@@ -20,14 +20,10 @@ class Navigation extends Component {
         document.addEventListener('scroll', this.handleScroll);
     }
 
-    componentWillUnmount() {
-        document.removeEventListener('scroll', this.handleScroll);
-    }
-
     listNavItem = [
         { title: "ABOUT", to: "#about", icon: "person" },
         { title: "PORTFOLIO", to: "#portfolio", icon: "work" },
-        { title: "CONTACT", to: "#contact", icon: "mail" }
+        // { title: "CONTACT", to: "#contact", icon: "mail" }
     ];
 
     state = {
