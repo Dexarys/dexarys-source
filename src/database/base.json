@@ -1,0 +1,66 @@
+{
+  "projects": [
+    {
+        "_id": "7d099cb0-b7e7-4576-8a40-3e0322056536",
+        "desc_img": "Workflow GIT",
+        "description": "Conception of a specific gitflow",
+        "name": "Workflow GIT",
+        "source": "gitflow.png"
+    },
+    {
+        "_id": "7d099cb0-b7e7-4576-8a40-3e0322056536",
+        "desc_img": "PHP version",
+        "description": "Migration Legacy code",
+        "name": "PHP 5 to PHP 8",
+        "source": "php.png"
+    },
+    {
+        "_id": "4ee14ee0-ffc4-42e3-93bc-ee5fc7bf8b92",
+        "desc_img": "Docker",
+        "description": "Make environment dev with Docker",
+        "name": "Dev container with Docker",
+        "source": "docker.png"
+    },
+    {
+      "_id": "da242943-fce6-46ef-9d50-efadc83d16e3",
+      "desc_img": "My portfolio",
+      "description": "My personnal portfolio !",
+      "link": "",
+      "name": "Portfolio",
+      "source": "dexa.png"
+    },
+    {
+      "_id": "48100374-ff66-4ec4-b4b9-88933ae192e7",
+      "desc_img": "",
+      "description": "A serious game !",
+      "link": "https://dexarys.github.io/Marathon-Satisfaction/",
+      "name": "Marathon Satisfaction",
+      "source": "dossier.png"
+    },
+    {
+      "_id": "40a19d99-5cb0-4310-b0a6-4005515cba27",
+      "desc_img": "CEFii logo",
+      "description": "Interactive map to locate students",
+      "link": "https://github.com/Dexarys/cefii-map",
+      "name": "CEFii Map",
+      "source": "cefii.jpg"
+    }
+  ],
+  "website_alert": {
+    "message_alert": "Website not finished yet",
+    "show_alert": false
+  },
+  "website_description": {
+    "author": "Albert Einstein",
+    "biography": "Hey ! My name is Matthieu Fallourd, I’m 27. Passionate about IT since I was very young . I am very interested in new technologies and more particularly in development. I like to give my all to learn the latest news.",
+    "interest": "I'm working since 3 years on a saas application with PHP and JS. I'm Fullstack with some OPS skills.",
+    "citation": "The most incomprehensible thing about the world is that it is comprehensible",
+    "copyright": "Matthieu Fallourd",
+    "email": "fallourd.matthieu@gmail.com",
+    "job": "SYMALEAN",
+    "job_picture": "symalean.png",
+    "job_url": "https://www.symalean.com/",
+    "phone": "06 48 91 25 27"
+  },
+  "website_open": true
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import firebase from '../../api/firebase';
+// import firebase from '../../api/firebase';
+import base from '../../database/base.json';
 
 import './css/Projects.css';
 
@@ -16,12 +17,13 @@ class Projects extends Component {
     }
 
     componentDidMount() {
-        this.projectsRef = firebase.database().ref('/projects');
-        this.projectsRef.orderByChild("order").limitToLast(9).on('value', (snap) => {
-            let data = [];
-            snap.forEach((childSnap) => { data.push(childSnap.val()) })
-            this.setState({ projects: data });
-        });
+        // this.projectsRef = firebase.database().ref('/projects');
+        this.projectsRef = base.projects;
+        let projects = [];
+        this.projectsRef.forEach(function(snap) {
+            projects.push(snap)
+        })
+        this.setState({ projects: projects });
     }
 
     dropdown() {

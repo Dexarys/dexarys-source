@@ -18,11 +18,14 @@
 .projects_img_div {
     width: 230px;
     height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .projects_img {
     width: 200px;
-    margin: auto;
 }
 
 .dropdown i, .titledrop {

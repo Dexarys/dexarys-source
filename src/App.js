@@ -1,5 +1,3 @@
-import firebase from './api/firebase';
-
 import Loader from './components/loader/Loader';
 import Navigation from './components/navigation/Navigation';
 import Footer from './components/footer/Footer';
@@ -8,8 +6,10 @@ import HomePage from './pages/HomePage';
 import './App.css';
 import { Component } from 'react';
 
+import base from './database/base.json';
+
 class App extends Component {
-  
+
 	state = {
 		isLoading: true,
 		isWebsiteOpen: true,
@@ -24,44 +24,19 @@ class App extends Component {
 	};
 
 	componentDidMount() {
-		this.firebaseRefOpen = firebase.database().ref('/website_open');
-		this.firebaseRefOpen.on('value', (snap) => {
-			this.setState({ isWebsiteOpen: snap.val(), isLoading: false });
-		});
-		this.showAlertRef = firebase.database().ref('/website_alert/show_alert');
-        this.showAlertRef.on('value', (snap) => {
-            this.setState({ isShowAlert: snap.val() })
-        });
-        this.msgAlertRef = firebase.database().ref('/website_alert/message_alert');
-        this.msgAlertRef.on('value', (snap) => {
-            this.setState({ msgAlert: snap.val() })
-        });
-        this.citationRef = firebase.database().ref('/website_description/citation');
-        this.citationRef.on('value', (snap) => {
-            this.setState({ msgCitation: snap.val() })
-        });
-        this.authorRef = firebase.database().ref('/website_description/author');
-        this.authorRef.on('value', (snap) => {
-            this.setState({ msgAuthor: snap.val() })
-        });
-        this.bioRef = firebase.database().ref('/website_description/biography');
-        this.bioRef.on('value', (snap) => {
-            this.setState({ biography: snap.val() })
-        });
-        this.emailRef = firebase.database().ref('/website_description/email');
-        this.emailRef.on('value', (snap) => {
-            this.setState({ email: snap.val() })
-        });
-        this.phoneRef = firebase.database().ref('/website_description/phone');
-        this.phoneRef.on('value', (snap) => {
-            this.setState({ phone: snap.val() })
-        });
-        this.copyrightRef = firebase.database().ref('/website_description/copyright');
-        this.copyrightRef.on('value', (snap) => {
-            this.setState({ copyright: snap.val() })
-        });
+        this.setState({ isWebsiteOpen: base.website_open });
+        this.setState({ isShowAlert: base.website_alert.show_alert })
+        this.setState({ msgAlert: base.website_alert.message_alert })
+        this.setState({ msgAuthor: base.website_description.author })
+        this.setState({ biography: base.website_description.biography })
+        this.setState({ interest: base.website_description.interest })
+        this.setState({ msgCitation: base.website_description.citation })
+        this.setState({ copyright: base.website_description.copyright })
+        this.setState({ email: base.website_description.email })
+        this.setState({ phone: base.website_description.phone })
+        this.setState({ isLoading: false })
 	}
-	
+
 	render() {
 		return (
 		<div>
@@ -74,7 +49,7 @@ class App extends Component {
 						<Navigation isShowAlert={this.state.isShowAlert} msgAlert={this.state.msgAlert} msgCitation={this.state.msgCitation} msgAuthor={this.state.msgAuthor} />
 					</div>
 					<div>
-						<HomePage isEmail={this.state.email} isPhone={this.state.phone} env={this.props.env} biography={this.state.biography} />
+						<HomePage isEmail={this.state.email} isPhone={this.state.phone} env={this.props.env} biography={this.state.biography} interest={this.state.interest} />
 					</div>
 					<div>
 						<Footer isCopyright={this.state.copyright} />

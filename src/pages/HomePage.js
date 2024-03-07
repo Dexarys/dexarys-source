@@ -24,9 +24,11 @@ class HomePage extends Component {
                         <p className="text-about">
                             {this.props.biography}
                         </p>
+                        <p className='text-about'>
+                            {this.props.interest}
+                        </p>
                     </div>
                     <div className="link-buttons flex justify-content-center">
-                        {/* <a href="#contact" className="link text-center" rel="noopener noreferrer"><div className="button">Contact Me</div></a> */}
                         <a href={cv} download="cv.pdf" target="_blank" className="link text-center" rel="noopener noreferrer"><div className="button">Download CV</div></a>
                     </div>
                 </div>

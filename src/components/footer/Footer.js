@@ -21,7 +21,7 @@ class Footer extends Component {
                         <a href="https://twitter.com/Dexarys" target="_blank" rel="noopener noreferrer"><div className="social-logo"><span><img src={twitter} alt="twitter" /></span></div></a>
                     </div>
                     <div className="Copyright">
-                        <p>{this.props.isCopyright}</p>
+                        <p>@{new Date().getFullYear()} {this.props.isCopyright}</p>
                     </div>
                 </div>
             </footer>
