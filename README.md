@@ -1,12 +1,43 @@
-# React + Vite
+# Portfolio - Source Code
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce repository contient le code source de mon portfolio personnel, développé avec **React** et **Vite**.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ce projet est un portfolio dynamique qui présente mes projets, mes compétences, et d'autres informations importantes. Le frontend est construit avec React et géré par Vite pour une compilation rapide et un développement fluide.
 
-## Expanding the ESLint configuration
+## Structure du projet
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Public** : Contient les fichiers statiques comme les images, les icônes, et autres assets accessibles directement.
+- **Src** : Contient le code source du frontend, y compris les composants React et les fichiers de style.
+- **Assets** : Contient les images et autres ressources nécessaires à l'application, maintenant déplacées pour un meilleur management des ressources.
+- **Database** : Contient un fichier `base.json` avec les informations sur mes projets et autres données nécessaires au bon fonctionnement du portfolio.
+
+## Développement local
+
+Pour démarrer le projet en mode développement, exécutez la commande suivante :
+
+```bash
+npm install
+npm run dev
+```
+
+Cela démarre le serveur de développement sur http://localhost:3000 avec HMR (Hot Module Replacement) activé.
+
+## Build
+Le build de production de l'application est généré et déployé dans un repository séparé, appelé /me. Le code source du portfolio est ensuite automatiquement compilé et mis à jour dans le repository de production pour être accessible via GitHub Pages.
+
+## Dépendances
+- React
+
+- Vite
+
+- ESLint pour le linting du code
+
+## Plugins Vite utilisés
+@vitejs/plugin-react : Utilise Babel pour le Fast Refresh dans le développement.
+
+@vitejs/plugin-react-swc : Utilise SWC pour le Fast Refresh avec une meilleure performance.
+
+## Configuration ESLint
+Si vous développez une application de production, nous recommandons d'utiliser TypeScript et d'activer des règles de linting compatibles avec les types. Consultez le template TypeScript pour intégrer TypeScript et typescript-eslint dans votre projet.
