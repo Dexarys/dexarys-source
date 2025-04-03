@@ -18,7 +18,7 @@
     white-space: normal;
     float: none;
     outline: 0;
-    background-color: #c1bcb3;
+    background-color: transparent;
     border-top: 1px solid #b1ada5;
 }
 .bar-block .bar-item:hover {
