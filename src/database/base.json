@@ -2,10 +2,10 @@
   "projects": [
     {
       "_id": "83b2761a-ec5b-4948-9857-6c4458e75078",
-      "desc_img": "Lynqis HSE",
+      "desc_img": "LeanQis HSE",
       "description": "QHSE Application",
-      "name": "Lynqis HSE",
-      "source": "lynqis.svg",
+      "name": "LeanQis HSE",
+      "source": "leanqis.svg",
       "text": "LeanQis HSE is a SaaS application currently under development."
     },
     {
