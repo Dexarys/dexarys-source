@@ -8,7 +8,13 @@ import './css/PortFolio.css';
 
 import Projects from '../components/projects/Projects';
 
-const HomePage = ({ biography, interest }) => {
+const HomePage = ({ biography, interest, hobbies }) => {
+    let myDate = new Date('1996-12-20');
+    let diff = Date.now() - myDate;
+    let diffDate = new Date(diff);
+    let age =  Math.abs(diffDate.getUTCFullYear() - 1970);
+
+    biography =  biography.replace("{age}", age);
     return (
         <div>
             <div className="content padding-64" id="about">
@@ -18,7 +24,10 @@ const HomePage = ({ biography, interest }) => {
                         <img className="img-me" src={mf} alt="me" />
                     </div>
                     <p className="text-about">{biography}</p>
+                    <br />
                     <p className='text-about'>{interest}</p>
+                    <br />
+                    <p className='text-about'>{hobbies}</p>
                 </div>
                 <div className="link-buttons flex justify-content-center">
                     <a href={cv} download="cv.pdf" target="_blank" className="link text-center" rel="noopener noreferrer">

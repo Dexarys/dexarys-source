@@ -1,0 +1,60 @@
+.mask-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    z-index: 9999;
+}
+
+.modal {
+    background-color: #fff;
+    width: 40vw;
+    height: 100vh;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+    overflow-y: auto;
+    animation: slideInLeft 0.3s ease-out;
+    position: relative;
+    padding: 20px;
+}
+
+.modal-header  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p-close-button {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.p-close-button-text {
+    color: #474747;
+    font-size: large;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .modal {
+        width: 100vw;
+    }
+}
+@media screen and (min-width: 993px) {
+    .modal {
+        width: 50vh;
+    }
+}

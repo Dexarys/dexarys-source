@@ -5,35 +5,40 @@
       "desc_img": "Lynqis HSE",
       "description": "QHSE Application",
       "name": "Lynqis HSE",
-      "source": "gitflow.png"
+      "source": "lynqis.svg",
+      "text": "LeanQis HSE is a SaaS application currently under development."
     },
     {
       "_id": "83b2761a-ec5b-4948-9857-6c4458e75078",
       "desc_img": "RemanxNG",
       "description": "Design of Angular Component Library",
       "name": "RemanxNG",
-      "source": "gitflow.png"
+      "source": "remanxng.svg",
+      "text": "RemanxNG, together with Rx-icons, is a lightweight and customizable Angular component library designed to minimize external dependencies. Currently under development"
     },
     {
       "_id": "7d099cb0-b7e7-4576-8a40-3e0322056536",
       "desc_img": "Workflow GIT",
       "description": "Conception of a specific gitflow",
       "name": "Workflow GIT",
-      "source": "gitflow.png"
+      "source": "gitflow.png",
+      "text": "Designed a new development and deployment workflow aligned with both team and business needs, with the aim of simplifying and speeding up the entire process."
     },
     {
       "_id": "7d099cb0-b7e7-4576-8a40-3e0322056536",
       "desc_img": "PHP version",
       "description": "Migration Legacy code",
       "name": "PHP 5 to PHP 8",
-      "source": "php.png"
+      "source": "php.png",
+      "text": ""
     },
     {
       "_id": "4ee14ee0-ffc4-42e3-93bc-ee5fc7bf8b92",
       "desc_img": "Docker",
       "description": "Make environment dev with Docker",
       "name": "Dev container with Docker",
-      "source": "docker.png"
+      "source": "docker.png",
+      "text": "Created a Docker environment to simplify the setup of a development environment for a PHP application and its external microservices. The goal was to ensure cross-platform compatibility and reduce technical setup time. It also separates the different containers (database, Gotenberg, etc.) while maintaining interconnection."
     },
     {
       "_id": "da242943-fce6-46ef-9d50-efadc83d16e3",
@@ -41,7 +46,8 @@
       "description": "My personnal portfolio !",
       "link": "",
       "name": "Portfolio",
-      "source": "dexa.png"
+      "source": "dexa.png",
+      "text": ""
     },
     {
       "_id": "48100374-ff66-4ec4-b4b9-88933ae192e7",
@@ -49,7 +55,8 @@
       "description": "A serious game !",
       "link": "https://dexarys.github.io/Marathon-Satisfaction/",
       "name": "Marathon Satisfaction",
-      "source": "dossier.png"
+      "source": "dossier.png",
+      "text": "Marathon Satisfaction is a serious game imagined and created as part of a university group project."
     },
     {
       "_id": "40a19d99-5cb0-4310-b0a6-4005515cba27",
@@ -57,7 +64,8 @@
       "description": "Interactive map to locate students",
       "link": "https://github.com/Dexarys/cefii-map",
       "name": "CEFii Map",
-      "source": "cefii.jpg"
+      "source": "cefii.jpg",
+      "text": ""
     }
   ],
   "website_alert": {
@@ -66,8 +74,9 @@
   },
   "website_description": {
     "author": "Albert Einstein",
-    "biography": "Hey ! My name is Matthieu Fallourd, I’m 27. Passionate about IT since I was very young . I am very interested in new technologies and more particularly in development. I like to give my all to learn the latest news.",
+    "biography": "Hey ! My name is Matthieu Fallourd, I'm {age}. Passionate about IT since I was very young . I am very interested in new technologies and more particularly in development. I like to give my all to learn the latest news.",
     "interest": "I'm working since 3 years on a saas application with PHP and JS. I'm Fullstack with some OPS skills.",
+    "hobbies": "I play competitive table tennis at the regional and national levels.",
     "citation": "The most incomprehensible thing about the world is that it is comprehensible",
     "copyright": "Matthieu Fallourd",
     "email": "fallourd.matthieu@gmail.com",
