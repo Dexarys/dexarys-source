@@ -7,7 +7,6 @@ import twitter from '../../assets/social-logo/twitter.png';
 import './css/Navigation.css';
 
 const Navigation = ({ isShowAlert, msgAlert, msgCitation, msgAuthor }) => {
-    const [isToggle, setIsToggle] = useState(false);
     const [isScroll, setIsScroll] = useState(false);
 
     useEffect(() => {
@@ -42,15 +41,6 @@ const Navigation = ({ isShowAlert, msgAlert, msgCitation, msgAuthor }) => {
                         <i className="material-icons">menu</i>
                     </button>
                 </div>
-                {isToggle && (
-                    <div className="bar-block" id="toggle-navbar">
-                        {listNavItem.map((item, i) => (
-                            <a key={i} href={item.to} className="bar-item button">
-                                <i className="material-icons">{item.icon}</i><span>{item.title}</span>
-                            </a>
-                        ))}
-                    </div>
-                )}
             </div>
             <div className="bgimg-1 display-container opacity-min" id="home">
                 <div className="display-middle description">

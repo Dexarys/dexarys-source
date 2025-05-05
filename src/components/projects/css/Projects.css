@@ -41,7 +41,7 @@
 }
 
 .projects_img {
-    width: 200px;
+    max-width: 200px;
 }
 
 .dropdown i, .titledrop {

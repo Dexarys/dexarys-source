@@ -21,6 +21,7 @@ const App = ({ env }) => {
     copyright: "",
     interest: "",
     hobbies: "",
+    mark: "",
   });
 
   useEffect(() => {
@@ -37,6 +38,7 @@ const App = ({ env }) => {
       copyright: base.website_description.copyright,
       interest: base.website_description.interest,
       hobbies: base.website_description.hobbies,
+      mark: base.website_description.mark
     });
   }, []);
 
@@ -63,6 +65,7 @@ const App = ({ env }) => {
         biography={state.biography}
         interest={state.interest}
         hobbies={state.hobbies}
+        mark={state.mark}
       />
       <Footer isCopyright={state.copyright} />
     </div>
