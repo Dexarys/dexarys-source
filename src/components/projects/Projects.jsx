@@ -57,10 +57,10 @@ const Projects = () => {
                   </a>
                 </div>
                 <div className="p-link-buttons flex justify-content-center">
-                  <div className="p-link">
-                    <div className="p-button" onClick={() => handleOpen(i)}>
-                      More...
-                    </div>
+                  <div className={"p-link " + (item.text ? 'show' : 'p-hide')}>
+                      <div className="p-button" onClick={() => item.text ? handleOpen(i) : {}}>
+                        More...
+                      </div>
                   </div>
                 </div>
 

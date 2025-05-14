@@ -15,7 +15,7 @@ const Project = ({ onClose, item }) => {
             <img className="projects_img" src={imgPath} alt={item.desc_img} />
           </div>
           <div>
-            <p>{item.text}</p>
+            <div style={{ whiteSpace: 'pre-line' }}>{item.text}</div>
           </div>
         </div>
       </div>

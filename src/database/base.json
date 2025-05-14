@@ -30,7 +30,7 @@
       "description": "Migration Legacy code",
       "name": "PHP 5 to PHP 8",
       "source": "php.png",
-      "text": ""
+      "text": "Refactored legacy PHP codebase to enhance maintainability and adopt modern standards. Introduced Composer for dependency management, enforced strict typing, and removed deprecated functionality. \nMigrated packages and implemented PSR-4 autoloading. \nAuthored internal documentation to support team onboarding and collaboration."
     },
     {
       "_id": "4ee14ee0-ffc4-42e3-93bc-ee5fc7bf8b92",
